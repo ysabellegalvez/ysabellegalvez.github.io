@@ -1,0 +1,137 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #c4c1b0;
+}
+
+body { /* text on page */
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	color: black;
+}
+
+
+/* N A V I G A T I O N   B A R */
+li, a, button {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	color: white;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: rgb(91,111,100, .8);
+	margin: -20px;
+
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav__links {
+	list-style:  none;
+
+}
+
+.nav__links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav__links li a {
+	transition:  all 0.3s ease 0s;
+}
+
+.nav__links li a:hover { /* when you hover over the button */
+	color: rgb(162,169,153);
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgb(162,169,153, 1);
+	border-radius: 50px;
+	cursor: pointer;
+	transition:  all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color:  rgb(162,169,153, .5)
+}
+
+/* source: https://www.youtube.com/watch?v=PwWHL3RyQgk */ 
+
+
+/* H E A D E R S */
+h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	text-shadow: 5px 5px rgb(162,169,153);
+}
+
+h2 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 40px;
+	color: rgb(91,111,100);
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	margin-top: -30px;
+}
+
+h4 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 15px;
+	color: gray;
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+/* G R I D */
+.wrapper {
+	padding:  1em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 3em;
+
+	margin-left: 5em;
+	margin-right: 5em;
+	justify-content: center;
+	align-items: center; /* puts in the vertical center of div */ 
+}
+
+.wrapper > div {
+	text-align: right;
+}
+
+.wrapper > div:nth-child(even) {
+	text-align: left;
+}
+
+
+/* Hovering over Work Experience Images */ 
+.workexperiencehover:hover {
+	opacity: 0.8;
+}
+
+/* B O R D E R S */
+
+.lines { /* source: https://www.w3schools.com/howto/howto_css_style_hr.asp */
+  border-top: 4px dashed white;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 3em;
+}
