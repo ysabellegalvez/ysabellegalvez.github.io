@@ -84,6 +84,17 @@ section h2 {
     opacity: 1;
   }
 }
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
 /* source: https://alvarotrigo.com/blog/css-animations-scroll/ */
 
 h1 {
@@ -325,4 +336,6 @@ button:hover {
     column-count: 3;
   }
 }
+
+
 
