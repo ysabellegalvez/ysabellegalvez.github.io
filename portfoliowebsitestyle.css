@@ -11,7 +11,7 @@ body {
 }
 section {
   min-height: 80vh;
-  width: 120%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
