@@ -1,0 +1,106 @@
+<html>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="portfoliowebsitestyle.css">
+
+	<!-- font --> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+	<!-- JAVASCRIPT --> 
+	<script>
+		function reveal() {
+	  var reveals = document.querySelectorAll(".reveal");
+
+	  for (var i = 0; i < reveals.length; i++) {
+	    var windowHeight = window.innerHeight;
+	    var elementTop = reveals[i].getBoundingClientRect().top;
+	    var elementVisible = 150;
+
+	    if (elementTop < windowHeight - elementVisible) {
+	      reveals[i].classList.add("active");
+	    } else {
+	      reveals[i].classList.remove("active");
+	    }
+	  }
+	}
+	window.addEventListener("scroll", reveal);
+	</script>
+
+  	<h2> Film Crew </h2>
+
+	<section>
+	<div class="grid container reveal fade-right">
+		<div class="left"> 
+				<a href="https://www.indiegogo.com/projects/portrait-of-us-an-nyu-thesis-film"><img src="./othermedia/portraitofus.png" height="300px"></a>
+		</div>
+		<div class="right"> 
+			<h3 style="text-align:left;">Portrait of Us</h2>
+			<h4>Boom operator </h4>
+		</div>
+	</div>
+	</section>   	
+
+	<section>
+	<div class="grid container reveal fade-left">
+		<div class="left"> 
+				<a href="https://www.instagram.com/blackgirljoyfilm/"><img src="./othermedia/blackgirljoy.png" height="300px"></a>
+		</div>
+		<div class="right"> 
+			<h3 style="text-align:left;">Black Girl Joy</h3>
+			<h4>Production Assistant, Grip</h4>
+		</div>
+	</div>
+	</section> 
+
+	<h2 style="color: #7e9278; background-color: #eeedd8; padding-top: 2em;"> Show Production </h2>
+
+	<section>
+	<div class="grid container reveal fade-right">
+		<div class="left"> 
+			<a href="./othermedia/mrpi.html"><img src="https://s18798.pcdn.co/tandonschoolofengineering-ysabellegalvez/wp-content/uploads/sites/25299/2022/11/Theme.png" height="200px" style="padding: 20px;"></a>
+		</div>
+		<div class="right"> 
+			<h3 style="text-align:left;"> Mr. Philippines 2022 </h3>
+			<p> <i> The Filipino Intercollegiate Networking Dialogue District 3 (FIND D3) hosts two <b> cultural pageants </b> every year. New York University’s IFA and Columbia University’s Liga Filipina host the male pageant, <b> Mr. Philippines. </b> This pageant promotes Filipino cultural awareness and charity fundraising. I was part of the planning team of the 2022 show, in which I took on many different tasks to help the production of one of the organization’s biggest shows of the year. </i>
+			<a href="./othermedia/mrpi.html"> <button style="margin: 50px;"> VIEW MORE </button> </a>
+		</div>
+	</div>
+	</section> 
+
+
+	<!-- NAVIGATION BAR --> 
+	<head> 
+			<header> 
+				<a href="portfoliowebsite.html"> <img class="logo" src="./othermedia/logo.png" alt="logo" style="height: 70px"> </a>
+				<nav>
+					<ul class="nav__links">
+
+							<div class="dropdown">
+	  							<a href="workexperience.html"><button class="dropbtn">Work Experience</button></a>
+							</div>
+
+							<div class="dropdown">
+	  							<button class="dropbtn">Projects</button>
+	 							<div class="dropdown-content">
+								    <a href="mediadesign.html">Media Design</a>
+								    <a href="mediaproduction.html">Media Production</a>
+								</div>
+							</div>
+
+							<div class="dropdown">
+	  							<button class="dropbtn">More for fun</button>
+	 							<div class="dropdown-content">
+								    <a href="videomaking.html">Video-making</a>
+								    <a href="cameraroll.html">Camera roll</a>
+								</div>
+							</div>
+					</ul>
+				</nav>
+				<a class="cta" href="socials.html"><button>Socials</button></a> 
+			</header>
+			<!-- source: https://www.youtube.com/watch?v=PwWHL3RyQgk --> 
+		</head>
+
+</html>

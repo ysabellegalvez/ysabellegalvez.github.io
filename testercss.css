@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#horizontal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100vh;
+  display: flex;
+}
+
+#horizontal .section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+  box-sizing: border-box;
+}

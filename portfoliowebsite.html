@@ -1,0 +1,99 @@
+<html>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="portfoliowebsitestyle.css">
+
+	<!-- font --> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+	<!-- JAVASCRIPT --> 
+	<script>
+		function reveal() {
+	  var reveals = document.querySelectorAll(".reveal");
+
+	  for (var i = 0; i < reveals.length; i++) {
+	    var windowHeight = window.innerHeight;
+	    var elementTop = reveals[i].getBoundingClientRect().top;
+	    var elementVisible = 150;
+
+	    if (elementTop < windowHeight - elementVisible) {
+	      reveals[i].classList.add("active");
+	    } else {
+	      reveals[i].classList.remove("active");
+	    }
+	  }
+	}
+	window.addEventListener("scroll", reveal);
+	</script>
+
+	<title> Ysabelle Galvez </title>
+
+	<body> 
+	<section style="background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmRmYjQyMDIzY2Q1ZDRjM2ZmYjFjMDM1ZjI4NjM5YzM0NjY3NWM5NyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/eBJxwouYTtPnL6LU1h/giphy.gif); background-repeat: no-repeat; background-position: center; background-size: cover;">
+  	<h1>Ysabelle Galvez</h1>
+	</section>
+
+	<section>
+	  <div class="container reveal fade-right"> 
+        <h3>Multimedia Design</h3>
+        <h3>Digital Marketing</h3>
+        <h4><i>Interested in the intersection of UX/UI and marketing </h4>
+        <h4>with a side of multimedia production and design </h4></i>
+	  </div>
+	</section>
+
+	<section>
+	  <div class="container reveal fade-left"> 
+        <h4>I am currently an incoming senior (Class of 2024) at New York University studying <a href="http://idm.engineering.nyu.edu/" target="_blank" style="color:black;">Integrated Design & Media</a> with a minor in Business studies.
+        <h3 style="text-align: left;"> <i> Based in NYC </i> </h3>
+	  </div>
+	</section>	
+
+
+	<section>
+	  <div class="container reveal fade-bottom">
+	    <h3> Highlight </h3> <h5> <i> updated 5/6/23 </i> </h5>
+		<a href="./moresites/albert.html"><img src="./othermedia/albertcover.png" style="width: 40%;" class="centerhorizontal"></a>
+		<h4 style="text-align: center;"> NYU Albert Unsolicited Design </h4>
+		<p style="text-align:center; padding: 1em;"> Made for my semester-long project in my UX Design class Spring 2023 
+	  </div>
+	</section>
+
+	</body>
+
+	<!-- NAVIGATION BAR --> 
+	<head> 
+			<header> 
+				<a href="portfoliowebsite.html"> <img class="logo" src="./othermedia/logo.png" alt="logo" style="height: 70px"> </a>
+				<nav>
+					<ul class="nav__links">
+
+							<div class="dropdown">
+	  							<a href="workexperience.html"><button class="dropbtn">Work Experience</button></a>
+							</div>
+
+							<div class="dropdown">
+	  							<button class="dropbtn">Projects</button>
+	 							<div class="dropdown-content">
+								    <a href="mediadesign.html">Media Design</a>
+								    <a href="mediaproduction.html">Media Production</a>
+								</div>
+							</div>
+
+							<div class="dropdown">
+	  							<button class="dropbtn">More for fun</button>
+	 							<div class="dropdown-content">
+								    <a href="videomaking.html">Video-making</a>
+								    <a href="cameraroll.html">Camera roll</a>
+								</div>
+							</div>
+					</ul>
+				</nav>
+				<a class="cta" href="socials.html"><button>Socials</button></a> 
+			</header>
+			<!-- source: https://www.youtube.com/watch?v=PwWHL3RyQgk --> 
+		</head>
+
+</html>
