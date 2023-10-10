@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  opacity: .5; 
+}
+
+html, body {
+  background-color: #627668;
+  background-image: url(https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 { /* ysabelle galvez */
+  font-size: 120px;
+  color: #0b2207;
+  text-shadow: 3px 4px 4px #eeedd8;
+  text-align: left;
+  margin: .5em;
+  width: 100%;
+}
+
+p { /* scrolling text */
+  margin: 3em;
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  color: black;
+  text-shadow: 5px #eeedd8;
+}
+
+h2 { /* menus */
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  color: black;
+  text-shadow: 3px 2px 2px white;
+  padding: 1em;
+  line-height: 2em;
+  text-align: right;
+}
+
+
+/* RESPONSIVE TEXT */
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 120px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.menu {
+  text-decoration: none;
+}
+
