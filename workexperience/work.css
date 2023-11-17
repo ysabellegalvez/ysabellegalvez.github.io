@@ -5,6 +5,13 @@ html {
 	padding: 0;
 }
 
+body {
+	min-height: 100vh;
+ 	display: flex;
+ 	flex-direction: column;
+ 	margin: 0;
+}
+
 a {
 	color: #eeedd8;
 }
@@ -25,11 +32,11 @@ img {
 	margin: 20px;
 }
 
-
 footer {
 	position: relative;
 	left: 0;
 	bottom: 0;
+	right: 0;
 	width: 100%;
 	background-color: #627668;
 	text-align: center;
