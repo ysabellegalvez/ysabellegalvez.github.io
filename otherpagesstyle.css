@@ -1,10 +1,16 @@
 html {
   background: #7e9278;
-  margin: 0px;
+  margin: 0;
   font-family: "Roboto Mono";
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 
 a:hover {
   opacity: 0.6;
@@ -54,8 +60,10 @@ img {
 }
 
 footer {
+  margin-top: auto;
   position: relative;
   left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
   background-color: #627668;
