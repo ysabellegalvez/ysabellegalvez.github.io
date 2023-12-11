@@ -72,6 +72,13 @@ footer {
   padding: 10px;
 }
 
+hr {
+  border-color: #eeedd8;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 70%;
+}
+
 
 /* RESPONSIVE TEXT */
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
