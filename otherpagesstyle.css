@@ -117,15 +117,18 @@ hr {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h2 {
-    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     font-size: 60px;
   }
   h3 {
-    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     font-size: 50px;
   }
   p {
-    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     font-size: 12px;
   }
 }
