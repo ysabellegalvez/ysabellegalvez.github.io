@@ -24,7 +24,7 @@ a {
 h2 { /* page title */
   color: #627668;
   font-size: 130px;
-  margin-left: .5em;
+  margin-left: .2em;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -79,6 +79,39 @@ hr {
   width: 70%;
 }
 
+/* LEFT RIGHT GRID */
+.some-page-wrapper {
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left{
+  height: 100%;
+  margin: 0;
+}
+
+.right {
+  height: 100%;
+}
+
+.some-page-wrapper p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 /* RESPONSIVE TEXT */
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -88,6 +121,9 @@ hr {
   }
   h3 {
     font-size: 50px;
+  }
+  p {
+    font-size: 12px;
   }
 }
 
