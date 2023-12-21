@@ -54,9 +54,7 @@ p { /* description */
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
 }
 
 footer {
@@ -80,55 +78,58 @@ hr {
 }
 
 /* LEFT RIGHT GRID */
-.some-page-wrapper {
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  float: left;
+  width: 50%;
+  margin-top: 3em;
+  margin-bottom: 2em;
 }
 
-.left{
-  height: 100%;
-  margin: 0;
-}
-
-.right {
-  height: 100%;
-}
-
-.some-page-wrapper p {
+.column p {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+.column img {
+  float: right;
+  margin-right: 5em;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) { /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  .column {
+    width: 100%;
+  }
+}
 
 /* RESPONSIVE TEXT */
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h2 {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 60px;
   }
   h3 {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 50px;
   }
   p {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 12px;
   }
 }
@@ -168,4 +169,3 @@ hr {
     column-count: 3;
   }
 }
-
