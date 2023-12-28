@@ -110,6 +110,7 @@ header.sticky {
   padding: 12px 15%;
 }
 
+/* ABOUT */
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -121,6 +122,31 @@ header.sticky {
   margin: 20px 0;
 }
 
+
+/* SKILLS */
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  color: var(--bg-color);
+  text-align: left;
+}
+
+.box {
+  background: var(--second-bg-color);
+  min-height: 500px;
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all .45s ease;
+}
+
+.box img {
+  width: 100px;
+}
+
+/* FOOTER */
 .footer {
   padding: 15px 15%;
   display: flex;
