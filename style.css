@@ -1,93 +1,140 @@
 * {
-  margin: 0px;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Mono";
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  opacity: .5; 
-}
-
-html, body {
-  background-color: #627668;
-  background-image: url(https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-h1 { /* ysabelle galvez */
-  font-size: 120px;
-  color: #0b2207;
-  text-shadow: 3px 4px 4px #eeedd8;
-  text-align: left;
-  margin: .5em;
-  width: 100%;
-}
-
-p { /* scrolling text */
-  margin: 3em;
-  font-family: "Roboto Mono";
-  font-size: 24px;
-  color: black;
-  text-shadow: 5px #eeedd8;
-}
-
-h2 { /* menus */
-  font-family: "Roboto Mono";
-  font-size: 24px;
-  color: black;
-  text-shadow: 3px 2px 2px white;
-  padding: 1em;
-  line-height: 2em;
-  text-align: right;
-}
-
-
-/* RESPONSIVE TEXT */
-@media screen and (min-width: 601px) {
-  h1 {
-    font-size: 120px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 60px;
-  }
-  p {
-    font-size: 15px;
-  }
-}
-
-.container {
-  position: relative;
-}
-
-.bottomright {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  font-size: 18px;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-.menu {
+  scroll-behavior: smooth;
   text-decoration: none;
 }
 
+:root{
+  --bg-color: #7E9278;
+  --second-bg-color: #EEEDD8;
+  --third-bg-color: #394e34;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--second-bg-color);
+}
+
+header { /* nav bar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--third-bg-color);
+  padding: 22px 15%;
+  transition: all .45s ease;
+}
+
+a {
+  color: var(--second-bg-color);
+}
+
+a:hover {
+  opacity: .6;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+}
+
+.navlist a {
+  font-size: 17px;
+  margin: 0 25px;
+}
+
+
+.navlist a.active{
+  color: #0b2207;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #0b2207;
+  text-shadow: 3px 4px 4px #eeedd8;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #eeedd8;
+  text-shadow: 3px 4px 4px #0b2207;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 10px 35px;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: .6s ease;
+}
+
+section {
+  padding: 160px 15% 120px;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image:url(https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about-text a {
+  text-decoration: underline;
+}
+
+header.sticky {
+  background: var(--big-color);
+  border-bottom: 1px solid white;
+  padding: 12px 15%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about p {
+  margin: 20px 0;
+}
+
+.footer {
+  padding: 15px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--third-bg-color);
+  font-size: 10px;
+}
+
+hr {
+  border-color: #eeedd8;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 70%;
+}
