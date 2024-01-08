@@ -1,4 +1,7 @@
-* {  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto Mono";
   scroll-behavior: smooth;
   text-decoration: none;
@@ -10,58 +13,154 @@
   --third-bg-color: #394e34;
 }
 
-body, html {
-  height: 100%;
-  color: #7E9278;
-  line-height: 1.8;
-  background-color: #eeedd8;
+body {
+  background: var(--bg-color);
+  color: var(--second-bg-color);
+}
+
+header { /* nav bar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--third-bg-color);
+  padding: 22px 15%;
+  transition: all .45s ease;
 }
 
 a {
-  text-decoration: underline;
+  color: var(--second-bg-color);
 }
 
 a:hover {
-  opacity: .7;
+  opacity: .6;
 }
 
-.headlines {
-  color: #394e34;
+.navlist {
+  list-style: none;
+  display: flex;
 }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.navlist a {
+  font-size: 17px;
+  margin: 0 25px;
+}
+
+
+.navlist a.active{
+  color: #0b2207;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #0b2207;
+  text-shadow: 3px 4px 4px #eeedd8;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #eeedd8;
+  text-shadow: 3px 4px 4px #0b2207;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 10px 35px;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: .6s ease;
+}
+
+section {
+  padding: 160px 15% 120px;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image:url(https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif);
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif');
-  min-height: 100%;
+.about-text a {
+  text-decoration: underline;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif");
-  min-height: 400px;
+header.sticky {
+  background: var(--big-color);
+  border-bottom: 1px solid white;
+  padding: 12px 15%;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif");
-  min-height: 400px;
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.about p {
+  margin: 20px 0;
+}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+
+/* SKILLS */
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  color: var(--bg-color);
+  text-align: left;
+}
+
+.box {
+  background: var(--second-bg-color);
+  min-height: 500px;
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all .45s ease;
+}
+
+.box img {
+  width: 100px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 15px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--third-bg-color);
+  font-size: 10px;
+}
+
+hr {
+  border-color: #eeedd8;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 70%;
 }
