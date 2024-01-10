@@ -95,3 +95,15 @@ img {
     display: block;
   }
 }
+
+/* FOOTER */
+.footer {
+  padding: 15px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--third-bg-color);
+  font-size: 10px;
+}
