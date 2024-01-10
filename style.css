@@ -2,9 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: "Roboto Mono";
   scroll-behavior: smooth;
   text-decoration: none;
+
 }
 
 :root{
@@ -112,12 +114,12 @@ section {
 }
 
 .home {
-  
   height: 100vh;
   width: 100%;
   background-image:url(https://media.giphy.com/media/C8bHItUZMqEp0NmRhS/giphy.gif);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
 
@@ -187,7 +189,6 @@ header.sticky {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
   background: var(--third-bg-color);
   font-size: 10px;
 }
