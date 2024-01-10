@@ -3,13 +3,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="otherpagesstyle.css">
 	<title>Ysabelle Galvez: Media Production</title>
+	    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+	    <script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
 
 	<!-- font --> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-	<a href="homepage.html"> <button class="button"> Return Home </button></a>
+<!-- NAV BAR -->
+<div class="topnav" id="myTopnav">
+  <a href="./homepage.html">Home</a>
+  <a href="./homepage.html">About</a>
+  <a href="./workexperience/workexperience.html">Work Experience</a>
+  <a href="designprojects.html">Design Projects</a>
+  <a href="" class="active">Production</a>
+  <a href="./homepage.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 	<h2> Show Production </h2>
 	<center>
