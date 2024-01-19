@@ -167,6 +167,10 @@ header.sticky {
   text-align: left;
 }
 
+.skills-content p {
+  margin-top: 10px;
+}
+
 .box {
   background: var(--second-bg-color);
   min-height: 500px;
