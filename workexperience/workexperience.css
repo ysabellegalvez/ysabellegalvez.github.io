@@ -3,22 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Mono";
-  scroll-behavior: smooth;
 }
-
-body {
-  font-size: 1.3rem;
-  background: #7e9278;
-}
-
-/* nav bar */
 
 :root{
   --bg-color: #7E9278;
   --second-bg-color: #EEEDD8;
   --third-bg-color: #394e34;
+  --fourth-bg-color: #596855;
 }
 
+
+body {
+  font-size: 1.3rem;
+  background: var(--bg-color);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navbar */
 .topnav {
   overflow: hidden;
   background-color: var(--third-bg-color);
@@ -68,12 +73,7 @@ body {
   }
 }
 
-/* end of nav bar */
-
-a {
-  color: #333;
-  text-decoration: none;
-}
+/*end of navbar*/
 
 .button {
   background-color: #627668;
@@ -101,7 +101,7 @@ a {
 }
 
 .main-header h1 {
-  color: #627668;
+  color: var(--fourth-bg-color);
   font-size: 130px;
   margin-left: .5em;
   margin-bottom: 0px;
@@ -163,6 +163,8 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: var(--third-bg-color);
+  gap: 2rem;
+  background-color: #394e34;
   font-size: 10px;
 }
+
