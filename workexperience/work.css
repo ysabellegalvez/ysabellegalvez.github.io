@@ -37,10 +37,6 @@ a {
 	color: #eeedd8;
 }
 
-a:hover {
-	opacity: .9;
-}
-
 footer {
 	position: relative;
 	left: 0;
