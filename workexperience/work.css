@@ -1,9 +1,17 @@
 html {
-	background: #7e9278;
+	background: var(--fourth-bg-color);
 	margin: 0px, 10px;
 	font-family: "Roboto Mono";
 	padding: 0;
 }
+
+:root{
+  --bg-color: #7E9278;
+  --second-bg-color: #EEEDD8;
+  --third-bg-color: #394e34;
+  --fourth-bg-color: #596855;
+}
+
 
 body {
 	min-height: 100vh;
@@ -12,24 +20,25 @@ body {
  	margin: 0;
 }
 
-a {
-	color: #eeedd8;
-}
-
-a: hover {
-	opacity: .2;
-}
-
 img {
 	width: 100%;
 }
 
+
 .button {
-	background-color: #627668;
+	background-color: var(--bg-color);
 	color: #eeedd8;
 	padding: 10px;
 	font-family: "Roboto Mono";
 	margin: 20px;
+}
+
+a {
+	color: #eeedd8;
+}
+
+a:hover {
+	opacity: .6;
 }
 
 footer {
@@ -38,7 +47,7 @@ footer {
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	background-color: #627668;
+	background-color: var(--fourth-bg-color);
 	text-align: center;
 	font-size: 20px;
 	padding: 10px;
