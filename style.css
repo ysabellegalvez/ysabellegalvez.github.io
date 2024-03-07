@@ -9,7 +9,7 @@
 }
 
 :root{
-  --bg-color: #596855;
+  --bg-color: #7E9278;
   --second-bg-color: #EEEDD8;
   --third-bg-color: #394e34;
 }
@@ -173,7 +173,7 @@ header.sticky {
 
 .box {
   background: var(--second-bg-color);
-  min-height: 500px;
+  min-height: 400px;
   padding: 35px 45px;
   border-radius: 8px;
   transition: all .45s ease;
@@ -195,7 +195,7 @@ header.sticky {
 }
 
 hr {
-  border-color: --second-bg-color;
+  border-color: #eeedd8;
   margin-bottom: 2em;
   margin-top: 2em;
   width: 70%;
