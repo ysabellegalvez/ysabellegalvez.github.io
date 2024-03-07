@@ -9,7 +9,7 @@
 }
 
 :root{
-  --bg-color: #7E9278;
+  --bg-color: #596855;
   --second-bg-color: #EEEDD8;
   --third-bg-color: #394e34;
 }
@@ -18,7 +18,6 @@ body {
   background: var(--bg-color);
   color: var(--second-bg-color);
 }
-
 a {
   color: var(--second-bg-color);
 }
