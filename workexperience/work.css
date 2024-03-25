@@ -37,14 +37,14 @@ a {
 	color: #eeedd8;
 }
 
-footer {
-	position: relative;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	background-color: var(--fourth-bg-color);
-	text-align: center;
-	font-size: 20px;
-	padding: 10px;
+/* FOOTER */
+.footer {
+  padding: 15px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--third-bg-color);
+  font-size: 10px;
+  color: var(--second-bg-color);
 }
