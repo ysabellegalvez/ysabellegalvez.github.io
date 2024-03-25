@@ -163,8 +163,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  background-color: #394e34;
+  background: var(--third-bg-color);
   font-size: 10px;
+  color: var(--second-bg-color);
 }
-
