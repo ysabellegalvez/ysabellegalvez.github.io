@@ -224,6 +224,7 @@ hr {
     column-count: 1;
   }
 }
+
 @media screen and (min-width: 800px) and (max-width: 1300px) {
   .gallery {
     column-count: 2;
