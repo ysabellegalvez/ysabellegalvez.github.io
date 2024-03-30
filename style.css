@@ -12,12 +12,14 @@
   --bg-color: #596855;
   --second-bg-color: #EEEDD8;
   --third-bg-color: #394e34;
+  --fourth-bg-color: #0b2207;
 }
 
 body {
   background: var(--bg-color);
   color: var(--second-bg-color);
 }
+
 a {
   color: var(--second-bg-color);
 }
@@ -80,7 +82,7 @@ a:hover {
 
 h1 {
   font-size: 5rem;
-  color: #0b2207;
+  color: var(--fourth-bg-color);
   text-shadow: 3px 4px 4px #eeedd8;
 }
 
@@ -91,6 +93,7 @@ h2 {
   margin-bottom: 1.5em;
 }
 
+/* RESUME BUTTON */
 .btn {
   background-color: var(--bg-color);
   color: white;
@@ -105,6 +108,29 @@ h2 {
   border: 1px solid white;
   color: white;
   transition: .6s ease;
+}
+
+/* STATEMENT BUTTON */
+.statement {
+  font-size: 6vh;
+  color: var(--fourth-bg-color);
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.statement:hover {
+  color: var(--third-bg-color);
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+}
+
+.active {
+  font-size: 6vh;
+  color: black;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 section {
@@ -137,50 +163,6 @@ header.sticky {
   text-decoration: underline;
 }
 
-.about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 5rem;
-  text-align: left;
-}
-
-.box {
-  background: var(--second-bg-color);
-  min-height: 500px;
-  padding: 35px 45px;
-  border-radius: 8px;
-  transition: all .45s ease;
-}
-
-
-/* SKILLS */
-.skills-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
-  color: var(--bg-color);
-  text-align: left;
-}
-
-.skills-content p {
-  margin-top: 10px;
-}
-
-.box {
-  background: var(--second-bg-color);
-  min-height: 400px;
-  padding: 35px 45px;
-  border-radius: 8px;
-  transition: all .45s ease;
-}
-
-.box img {
-  width: 100px;
-}
 
 /* FOOTER */
 .footer {
@@ -191,6 +173,7 @@ header.sticky {
   justify-content: space-between;
   background: var(--third-bg-color);
   font-size: 10px;
+  color: var(--second-bg-color);
 }
 
 hr {
