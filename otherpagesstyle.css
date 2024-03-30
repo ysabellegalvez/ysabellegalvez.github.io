@@ -198,16 +198,17 @@ hr {
   }
 }
 
-
 /** C A M E R A   R O L L   G R I D  **/
 .gallery {
   max-width: 100%;
   margin: 1em;
 }
+
 .gallery-item {
   break-inside: avoid;
   margin-bottom: 16px;
 }
+
 .gallery-item figure {
   margin: 0;
   position: relative;
