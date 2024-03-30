@@ -140,35 +140,36 @@ hr {
   width: 70%;
 }
 
-/* LEFT RIGHT GRID */
-* {
-  box-sizing: border-box;
+/* Even Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: transparent;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 3em;
-  margin-bottom: 2em;
+.grid-container > div {
+  padding: 20px;
+  background-color: transparent;
 }
 
-.column p {
-  text-align: left;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.grid-container img {
+  width: 90%;
 }
 
-.column img {
-  float: right;
-  margin-right: 5em;
+/* Grid that resizes with contents */ 
+.chaos-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
 }
 
-.row:after {
-  display: table;
-  clear: both;
+.chaos-grid > div {
+  background-color: transparent;
 }
+
+/* end of grids */
 
 
 @media screen and (max-width: 900px) { /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -232,4 +233,3 @@ hr {
     column-count: 3;
   }
 }
-
