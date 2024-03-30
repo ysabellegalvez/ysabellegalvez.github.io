@@ -31,7 +31,7 @@ function myFunction() {
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="./workexperience/workexperience.html">Work Experience</a>
-  <a href="designprojects.html">Design Projects</a>
+  <a href="designprojects.html">Projects</a>
   <a href="https://aysabellegalvez.com/index.html#contact">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -48,51 +48,33 @@ function myFunction() {
 
     </div></section>
 
-  <section class="about" id="about">
-    <div><img src="./other/profile.JPG" style="width: 80%;"></div>
-    <div class="about-text"><h2>About Ysabelle</h2>
-    <p style="font-size: 25px;"><b><i> 
-    Where Design meets Marketing, I work in Branding, Marketing, and/or Communications. My foundation in design allows me to ideate and create with the audience in mind, usually within integrated or creative marketing. </i></b></p>
-    <p> I'm currently a senior (Class of 2024) at New York University studying <a href="https://idm.en
-      neering.nyu.edu/" target="_blank">Integrated Design & Media</a> with a minor in Business Studies. 
+  <section class="about">
 
-    <p>Based in NYC </p>
-    </div>
+  <p style="font-size: 6vh; margin: .5em 0;"> A <button class="statement" onclick="designer()">Designer</button> in <button class="statement" onclick="marketing()">Marketing</button> that <button onclick="creates()" class="statement">creates</button> and <button onclick="communicates()" class="statement">communicates</button> initiatives that embody your brand and appeal to current <button onclick="trends()" class="statement">trends</button>.</p>
+  <p style="margin-top: 2em; font-size: 3vh; color: black;" id="changer"><i>Click on the highlighted text above for more.</i></p>
 
   </section>
 
+<script type="text/javascript">
+  function designer() {
+    document.getElementById("changer").innerHTML="Designer on paper: <b>Bachelors of Science in Integrated Design & Media at New York University</b>.<p>Familiar with programs like Adobe Creative Cloud and Figma."
+  }
+  function marketing() {
+    document.getElementById("changer").innerHTML="Experienced [and more interested] in everything Integrated or Creative Marketing. From <b>designing branding materials to event planning.</b>"
+  }
+  function creates() {
+    document.getElementById("changer").innerHTML="Some common things I create for brands: <p><b>Social Media Content, Website/Blog pages, Creative Marketing Materials</b></p>"
+  }
+  function communicates() {
+    document.getElementById("changer").innerHTML="Utilizes my experience in <b>event planning</b> and <b>production assistance</b> to <b>coordinate marketing initiatives</b>"
+  }
+  function trends() {
+    document.getElementById("changer").innerHTML="Can back up design/creative work with analytics and research: <p><b>Social Listening, Competitive Analysis</b>"
+  }
+
+</script>
+
   <center><hr>
-
-    <section class="skills">
-      <div class="skills-text">
-        <h2>Focus/Skills</h2></div>
-
-    <div class="skills-content">
-
-      <!--<a href="./skills/marketing.html" style="color:#596855;">--><div class="box">
-      <img src="./other/marketingcreative.png">
-      <h3> Marketing Creative </h3>
-      <p> ◦ Design marketing materials <p> ◦ Branding <p> ◦ Build Email/SMS and social media campaigns </p></div>
-
-      <div class="box">
-      <img src="./other/sociallistening.png">
-      <h3> Communications & Analysis  </h3>
-      <p> ◦ Social Listening <p> ◦ Comparative Analysis <p> ◦ Website/blog copy </p> </div>
-
-      <!--<a href="./skills/socialmedia.html" style="color:#596855;">--> <div class="box">
-      <div class="s-icons"><img src="./other/socialmedia.png"></div>
-      <h3> Social Media </h3>
-      <p> ◦ Social Media Management <p> ◦ Content creation <p> ◦ Community Management </p></div> 
-
-    </div>
-    </section>
-
-    <i>Additional work: <a href="mediaproduction.html">Production</a>, <a href="cameraroll.html">Photography</a>, and <a href="videomaking.html">Video</a> </i>
-
-
-  <hr>
-
-
   <section class="contact" id="contact"><h2> Connect </h2>
   <img src="./socials/email.png">
   <a href="https://www.linkedin.com/in/ysabelle-galvez-945a78201/" target="_blank"><img src="./socials/linkedin.png"></a>
