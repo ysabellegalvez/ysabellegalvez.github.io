@@ -142,21 +142,14 @@ h1 { /* home page */
 
 .grid-container > div {
   background-color: transparent;
+  margin: 1em;
 }
 
 .grid-container img {
-	width: 85%;
+	width: 90%;
 	border-radius: 0;
 	box-shadow: none;
 	margin: .5em 0;
-	
-}
-
-.creative img {
-	width: 85%;
-  border-radius: 50px;
-  box-shadow: 5px 5px 5px gray;
-  margin: .5em 0;
 }
 
 footer {
@@ -187,3 +180,71 @@ footer {
 	}
 }
 
+/* marketing creative */
+.project {
+	background-image: url("./colors/everything.png");
+	padding: 1em;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 3px 3px #888888;
+}
+
+.projecthalf {
+	align-items: center;
+}
+
+.projectimage img {
+	width: 100%;
+}
+
+.projecttext {
+	padding-left: 20px;
+}
+
+.projecttext h6 {
+	font-size: 3vh;
+	text-align: left;
+	margin: 0;
+}
+
+.projecttext p {
+	font-size: 1.5vh;
+	margin: 0; padding: 0;
+}
+
+.categories {
+	border-width: 1px;
+	border-radius: 5px;
+	font-size: 1.1vh;
+	border-style: solid;
+	text-align: center;
+	margin: 0 10px;
+	padding: .3em;
+	line-height: 2.5em;
+}
+
+.project:hover {
+	box-shadow: 5px 5px #888888;
+}
+
+
+/* RESPONSIVE FOR PHONE */
+@media screen and (max-width: 1000px) {
+
+  main {
+    margin: 1em;
+  }
+
+  h1 {
+  	font-size: 3vh;
+  }
+
+  .bio {
+  	font-size: 3vh;
+  }
+
+  .grid-container {
+  	grid-template-columns: 1fr;
+  }
+
+}
