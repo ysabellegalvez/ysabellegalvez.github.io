@@ -163,22 +163,6 @@ footer {
 }
 
 
-/* responsive text for phone */
-@media screen and (max-width: 1000px){
-	h1 {
-		font-size: 3vh;
-	}
-
-	.title h1 {
-		line-height: 6vh;
-	}
-	h2 {
-		font-size: 8vh;
-	}
-	h4 {
-		font-size: 1.5vh;
-	}
-}
 
 /* marketing creative */
 .project {
@@ -239,6 +223,16 @@ footer {
   	font-size: 3vh;
   }
 
+  .title h1 {
+		line-height: 6vh;
+	}
+	h2 {
+		font-size: 8vh;
+	}
+	h4 {
+		font-size: 1.5vh;
+	}
+
   .bio {
   	font-size: 3vh;
   }
@@ -248,3 +242,4 @@ footer {
   }
 
 }
+
