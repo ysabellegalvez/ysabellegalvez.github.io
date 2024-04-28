@@ -88,7 +88,7 @@ a:hover {
     column-count: 2;
   }
 }
-@media screen and (min-width: 1300px) and (max-width: 1920px) {
+@media screen and (min-width: 1300px) and (max-width: 1000000px) {
   .gallery {
     column-count: 3;
   }
