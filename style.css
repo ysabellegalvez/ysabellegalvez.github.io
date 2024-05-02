@@ -21,6 +21,12 @@ main {
 	min-height: 100vh;
 }
 
+/* Changing the highlight colors */
+::selection {
+    background-color: var(--white);
+    color: var(--green);
+}
+
 h2 { /* other page titles */
 	font-size: 15vh;
 	margin-top: .5em;
