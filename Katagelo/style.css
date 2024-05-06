@@ -1,0 +1,482 @@
+* {
+	background-color: var(--yellow);
+	font-family: "Sen";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html, body, main {
+	width: 100%;
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+:root{
+  --yellow: #FAF3DD; 
+  --green: #2F565B; 
+  --blue: #D2EAEF; 
+  --pink: #EDAFB8;
+  --black: #0D1821;
+  --second-blue: #BED3D8; 
+}
+
+span, b, i, center, img {
+	background-color: transparent;
+}
+
+/* Changing the highlight colors */
+::selection {
+    background-color: var(--black);
+    color: var(--green);
+}
+
+h1 { /* Katagelo title */
+	font-size: 7vw;
+	background-color: transparent;
+} 
+
+h2 { /* headers */
+	margin: .5em 8%;
+	font-size: 6vw;
+	background-color: transparent;
+	font-family: "Arsenal";
+}
+
+h3 { /* what is social anxiety text */
+	font-size: 3vh;
+	background-color: transparent;
+	color: var(--green);
+}
+
+h4 { /* text subheadings or important text */
+	font-size: 3vh;
+	background-color: transparent;
+}
+
+p { /* all body text */
+	width: 70%;
+	margin: 1.5em 6em;
+	font-size: 3vh;
+	background-color: transparent;
+}
+
+.sidetext {
+	font-size: 2.5vh;
+	color: var(--green);
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:hover {
+	opacity: 50%;
+	color: var(--green);
+}
+
+.nohover:hover {
+	opacity: 1;
+}
+
+.important-link {
+	text-decoration: underline;
+}
+
+
+/* HYBRID SCROLL */
+
+section {
+  min-height: 110vh;
+  margin: 0;
+}
+
+.break { /* visual breaks */
+	min-height: 60vh;
+	margin: 0;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.stack {
+	position: sticky;
+	top: 0;
+}
+
+.scroll-container {
+  height: 500vh;
+}
+
+.horizontal-scroll {
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 600vw; /*change this for number of elements*/
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-contents {
+  height: 100%;
+  width: 100vw;
+}
+
+.scroll-contents img {
+	height: 20vh;
+}
+
+.sticky-wrap {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+/* end of hybrid scroll */
+
+/*BUTTONS */
+button {
+	border-radius: 30px;
+	background-color: var(--green);
+	color: var(--yellow);
+	font-size: 1vw;
+	padding: 1em;
+	box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+	text-align: center;
+}
+
+.menubuttons {
+	margin: 5em 10em; 
+}
+
+.twinebuttons {
+	position: absolute;
+	padding: 1em 3em;
+	margin-left: 4em;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+button:hover {
+	opacity: 50%;
+	background-color: var(--yellow);
+	color: var(--green);
+}
+/* end of buttons */
+
+/* Even Grid */
+.grid-container {
+	display: grid;
+	grid-template-columns: 50% auto;
+	grid-gap: 10px;
+	padding: 10px;
+	background-color: transparent;
+}
+
+.grid-container > div {
+	padding: 20px;
+	background-color: transparent;
+}
+
+/* TREATMENT */
+/*columns */
+.columncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 8%;
+}
+
+.column {
+  flex-basis: calc(30% - 20px); /* Adjust for margins */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Optional margin between columns */
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex-basis: calc(100% - 20px); /* Full width for smaller screens */
+  }
+}
+
+/* hover images */
+.treatmentcontainer {
+  position: relative;
+  width: 100%;
+}
+
+.treatmentcontainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue); 
+  color: black; 
+  box-sizing: border-box;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  border-radius: 10%;
+}
+
+.overlay p {
+	font-size: 2.5vh;
+	width: 85%;
+}
+
+.treatmentcontainer:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 5%; 
+  }
+
+  .overlay h2 {
+    font-size: 6vw; 
+  }
+
+  .overlay p {
+    font-size: 2vh; 
+  }
+}
+
+/* end of treatment  */
+
+
+/* Footer */
+footer {
+	background-color: var(--blue);
+	padding: 50px 80px;
+	margin: 0;
+}
+
+footer p {
+	padding: 0;
+	margin: 0;
+	font-size: 1.5vw;
+}
+
+footer h1 {
+	font-size: 4vw;
+}
+
+/* end of footer */
+
+
+/* PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: white;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--green);
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* ANIMATION CENTRAL */
+/* FLIP animation  */
+.flip {
+	animation-name: spin;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.flip {
+    animation: spin linear;
+    animation-timeline: view();
+    animation-range: contain;
+  }
+}
+
+@layer demo.support {  
+  .flip {
+    display: grid;
+    place-content: center;
+  }
+}
+
+/* Increase size animation */
+.bigger {
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation-range: cover 0% cover 100%;
+  animation: bigger linear;
+  animation-timeline: view(y);
+  animation-iteration-count: 1;
+}
+
+@keyframes bigger {
+  to {
+    width: 1500px;
+  }
+}
+
+
+/* big text animations */
+.scroll-reveal h3 {
+	color: hsl(0 0% 100% / 0.4);
+	background-clip: text;
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-image: linear-gradient(180deg, var(--green), var(--green));
+	animation: scroll-reveal linear forwards;
+	animation-timeline: view(y);
+
+	text-align: center; font-size: 6vh; margin: 2em;
+	animation-range-start: cover 30vh;
+	animation-range-end: cover 65vh;
+}
+
+@keyframes scroll-reveal {
+	to {
+		background-size: 100% 100%;
+	}
+}
+
+
+/* appear on scroll */
+.appear {
+	animation: fade linear; 
+	animation-timeline: view(); 
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.appearafter {
+	animation: fadelater linear;
+	animation-timeline: view();
+}
+
+@keyframes fadelater {
+	from {
+		opacity: .2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+/* end of animations */
+
+/* Responsive for PHONE */
+@media only screen and (max-width: 960px) {
+  * {
+    margin: 1em;
+  }
+
+  h2 {
+  	font-size: 4vh;
+  }
+
+  p, b, i, .sidetext {
+  	font-size: 2vh;
+  	width: 95%;
+  	margin: .5em 5%;
+  }
+
+  .column { /* responsive layout for treatment columns */
+    flex-basis: calc(100% - 20px); 
+  }
+
+  .column h4 {
+  	height: 4vh
+  }
+
+}
+
+
+/* Mobile popup */
+.popup {
+	background-color: var(--blue);
+	width: 60%;
+	padding: 3em;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 40%;
+	border-radius: 20px;
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width : 1920px){
+  .popup {
+  visibility:hidden;
+  }
+}
+
+@media screen and (max-width : 906px){
+ .popup {
+  visibility:visible;
+  }
+}
