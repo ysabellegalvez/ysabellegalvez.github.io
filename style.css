@@ -65,6 +65,7 @@ p {
 	display: grid;
 	grid-template-columns: 30% 70%;
 	grid-template-rows: auto;
+	margin: 3em 1em;
 }
 
 .work > div {
@@ -205,25 +206,24 @@ footer {
 }
 
 .projecttext h6 {
-	font-size: 4vh;
+	font-size: 3vh;
 	text-align: left;
 	margin: 0;
 }
 
 .projecttext p {
-	font-size: 1.5vw;
+	font-size: 1vw;
 	margin: 0; padding: 0;
 }
 
 .categories {
 	border-width: 1px;
 	border-radius: 6%;
-	font-size: 1.5vh;
+	font-size: 1.2vh;
 	border-style: solid;
 	text-align: center;
 	margin: 2px 10px;
 	padding: .5em;
-	
 	display: inline-block;
 }
 
