@@ -33,13 +33,24 @@ h2 { /* other page titles */
 }
 
 h3 { /* subheadings for other pages */
-	text-align: center;
-	font-size: 3vh;
+	font-size: 4vh;
 	margin-top: 2em;
+	text-align: center;
 
-	font-family: "ibm-plex-sans-condensed", sans-serif;
-	font-weight: 700;
-	font-style: normal;
+	font-family: "new-spirit", serif;
+	font-weight: 600;
+}
+
+.number {
+	font-family: "new-spirit", serif;
+	font-weight: 550;
+	font-size: 3vh;
+}
+
+.skill {
+	font-family: "new-spirit", serif;
+	font-weight: 400;
+	font-size: 3vh;
 }
 
 h4 { /*other page descriptions */
@@ -81,7 +92,6 @@ p {
 }
 
 a {
-	font-size: 2vh;
 	text-decoration: none;	
 	color: black; 
 }
@@ -97,33 +107,47 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Social buttons */
 button {
 	border-radius: 20px;
-	background-image: url(./colors/whitebackground.png);
+	background-image: url(./colors/greenbackground.png);
 	padding: .3em 1em;
-	border: 3px solid black;
+	border: 3px solid var(--green);
 	width: fit-content;
 	float: right;
 }
 
-.socials button {
-	padding: .3em 1em;
-	border: 2px solid black;
-	background-image: url(./colors/greenbackground.png);
-	float: center;
-	margin: 2em;
-	display: flex;
-  	flex-wrap: wrap;
-  	color: var(--white);
-	align-items: center; justify-content: center;
-	box-shadow: 5px 2px 2px gray;
+.fa-linkedin {
+  color: black;
 }
 
-.socials button:hover {
-	padding: 1em;
-	transition: all .2s ease-in-out;
+.fa-youtube {
+  color: black;
 }
 
+.fa-instagram {
+  color: black;
+}
+
+.btn-group button {
+  padding: 1em 2em; /* Some padding */
+  margin: 2em;
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+	opacity: .6;
+}
+
+/* end of social buttons */
 
 h1 { /* home page */
 	font-size: 7vh;
@@ -164,6 +188,11 @@ h1 { /* home page */
 .grid-container > div {
   background-color: transparent;
   margin: 1em;
+  align-self: flex-end;
+}
+
+.homelist {
+	margin: 0;
 }
 
 .grid-container img {
@@ -267,3 +296,4 @@ footer {
   }
 
 }
+
