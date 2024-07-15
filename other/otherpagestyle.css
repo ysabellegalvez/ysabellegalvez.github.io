@@ -7,21 +7,21 @@
 
 :root {
 	--white: #f2f2f2;
-	--green: #7A9E9F;
+	--green: #A2C5AC;
 	--blue: #AEDFF2;
 	--pink: #D9A7CB;
 	--purple: #9F84BD;
+	--gray: #d1cfcb;
 }
 
 button {
 	border-radius: 20px;
-	background-image: url(../colors/whitebackground.png);
+	background-image: url(./colors/greenbackground.png);
 	padding: .3em 1em;
-	border: 3px solid black;
+	border: 3px solid var(--green);
 	width: fit-content;
 	float: right;
 }
-
 
 h1 { /* home page */
 	font-size: 5vh;
@@ -96,11 +96,11 @@ a:hover {
 
 /*FOOTER */
 footer {
-	position: fixed;
 	width: 100%;
 	background-color: var(--green);
 	text-align: center;	
 	left: 0;
 	bottom: 0;
-	padding: 1em;
+	padding: .5em 0;
+	position: relative;
 }
