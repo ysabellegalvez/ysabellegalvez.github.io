@@ -14,7 +14,6 @@
 	--gray: #d1cfcb;
 }
 
-
 main {
 	margin: 1em 5em;
 	padding-bottom: 10em;
@@ -37,8 +36,8 @@ h3 { /* subheadings for other pages */
 	margin-top: 2em;
 	text-align: center;
 
-	font-family: "new-spirit", serif;
-	font-weight: 600;
+	font-family: 'ibm-plex-sans-condensed', sans-serif; 
+	font-weight: 800; 
 }
 
 .number {
@@ -203,7 +202,10 @@ h1 { /* home page */
 }
 
 hr {
-	border: 1px solid black;
+	border-top: 3px dotted white;
+	border-bottom: none;
+	width: 90%;
+	margin: 5em auto;	
 }
 
 
@@ -217,50 +219,6 @@ footer {
 	position: relative;
 }
 
-/* marketing creative */
-.project {
-	background-image: url("./colors/everything.png");
-	padding: 1em;
-	align-items: center;
-	border-radius: 30px;
-	box-shadow: 3px 3px #888888;
-}
-
-.projectimage img {
-	width: 100%;
-}
-
-.projecttext {
-	padding-left: 20px;
-}
-
-.projecttext h6 {
-	font-size: 3vh;
-	text-align: left;
-	margin: 0;
-}
-
-.projecttext p {
-	font-size: 1vw;
-	margin: 0; padding: 0;
-}
-
-.categories {
-	border-width: 1px;
-	border-radius: 6%;
-	font-size: 1.2vh;
-	border-style: solid;
-	text-align: center;
-	margin: 2px 10px;
-	padding: .5em;
-	display: inline-block;
-}
-
-.project:hover {
-	box-shadow: 5px 5px #888888;
-}
-
-/* animation */
 
 /* RESPONSIVE FOR PHONE */
 @media screen and (max-width: 900px) {
@@ -291,9 +249,7 @@ footer {
   	grid-template-columns: 1fr;
   }
 
-  .project {
-  	border-radius: 10px;
-  }
-
 }
+
+
 
