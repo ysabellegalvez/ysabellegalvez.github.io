@@ -4,7 +4,6 @@
 	font-family: "Roboto Mono";
 	scroll-behavior: smooth;
 }
-
 :root {
 	--white: #f2f2f2;
 	--green: #A2C5AC;
@@ -13,45 +12,28 @@
 	--purple: #9F84BD;
 	--gray: #d1cfcb;
 }
-
 main {
 	margin: 1em 5em;
 	padding-bottom: 10em;
 	min-height: 100vh;
 }
-
 /* Changing the highlight colors */
 ::selection {
     background-color: var(--white);
     color: var(--green);
 }
-
 h2 { /* other page titles */
 	font-size: 15vh;
 	margin-top: .5em;
 }
-
 h3 { /* subheadings for other pages */
-	font-size: 4vh;
-	margin-top: 2em;
 	text-align: center;
-
-	font-family: 'ibm-plex-sans-condensed', sans-serif; 
-	font-weight: 800; 
-}
-
-.number {
-	font-family: "new-spirit", serif;
-	font-weight: 550;
 	font-size: 3vh;
+	margin-top: 2em;
+	font-family: "ibm-plex-sans-condensed", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
-
-.skill {
-	font-family: "new-spirit", serif;
-	font-weight: 400;
-	font-size: 3vh;
-}
-
 h4 { /*other page descriptions */
 	font-size: 2vh;
 	padding: 1em 0;
@@ -60,17 +42,14 @@ h4 { /*other page descriptions */
 	font-weight: 400;
 	font-style: normal;
 }
-
 p {
 	font-size: 2vh;
 	margin: 1em 0;
 	width: 80%;
 }
-
 .list {
 	font-size: 2vh;
 }
-
 .work {
 	display: grid;
 	grid-template-columns: 30% 70%;
@@ -82,35 +61,32 @@ p {
 	font-size: 2vh;
 	margin: 1em;
 }
-
 .workleft {
 	font-size: 2vh;
 	padding: 1em;
 	text-align: right;
 	margin-right: 3em;
 }
-
 a {
 	text-decoration: none;	
 	color: black; 
 }
-
 a:hover {
 	opacity: .6;
 	color: white;
 	font-size: 2.5vh;
 	transition: all .2s ease-in-out;
 }
-
 .underline {
 	text-decoration: underline;
 }
 
-/* Social buttons */
+
 button {
 	border-radius: 20px;
 	background-image: url(./colors/greenbackground.png);
 	padding: .3em 1em;
+	margin: 1em;
 	border: 3px solid var(--green);
 	width: fit-content;
 	float: right;
@@ -128,43 +104,39 @@ button {
   color: black;
 }
 
-.btn-group button {
-  padding: 1em 2em; /* Some padding */
-  margin: 2em;
-  cursor: pointer; /* Pointer/hand icon */
-  float: center; /* Float the buttons side by side */
+
+.number {
+	font-family: "new-spirit", serif;
+	font-weight: 550;
+	font-size: 3vh;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+.skill {
+	font-family: "new-spirit", serif;
+	font-weight: 400;
+	font-size: 3vh;
 }
 
-.btn-group button:hover {
-	opacity: .6;
+.skilldes {
+	font-size: 1.5vh; 
+	display: flex;
+  	align-items: center;
 }
-
-/* end of social buttons */
 
 h1 { /* home page */
 	font-size: 7vh;
 	margin: 1em 0;
 }
-
 .bio {
 	font-size: 7vh;
 	text-decoration: none;
 }
-
 .bio:hover {
 	opacity: .7;
 	font-size: 7.5vh;
 	transform: scale(1.1);
 	transition: all .2s ease-in-out;
 }
-
 .roundedbox {
 	border-radius: 20px;
 	background-image: url(./colors/greenbackground.png);
@@ -174,7 +146,6 @@ h1 { /* home page */
 	display: inline-block;
 	position: absolute;
 }
-
 /* Even Grid */
 .grid-container {
   display: grid;
@@ -183,54 +154,78 @@ h1 { /* home page */
   padding: 10px;
   background-color: transparent;
 }
-
 .grid-container > div {
   background-color: transparent;
   margin: 1em;
-  align-self: flex-end;
 }
-
-.homelist {
-	margin: 0;
-}
-
 .grid-container img {
 	width: 90%;
 	border-radius: 0;
 	box-shadow: none;
 	margin: .5em 0;
 }
-
 hr {
-	border-top: 3px dotted white;
-	border-bottom: none;
-	width: 90%;
-	margin: 5em auto;	
+	border: 1px solid black;
 }
-
-
 footer {
 	width: 100%;
 	background-color: var(--green);
 	text-align: center;	
 	left: 0;
 	bottom: 0;
-	padding: .5em 0;
+	padding: 2em 0;
 	position: relative;
 }
+
+footer i {
+	font-size: .8em;
+}
+
+/* Project Cards */
+.project {
+	padding: 1em;
+	align-items: center;
+	border-radius: 30px;
+}
+.projectimage img {
+	width: 100%;
+}
+
+.projecttext h6 {
+	font-size: 3.5vh;
+	text-align: left;
+	margin: 0;
+}
+
+.projecttext p {
+	font-size: 1.5vw;
+	margin: 0; padding: 0;
+	width: 100%;
+}
+
+.categories {
+	border-width: 1px;
+	border-radius: 6%;
+	font-size: 1.3vh;
+	border-style: solid;
+	text-align: center;
+	margin-top: 5px; 
+	margin-right: 15px;
+	padding: .5em;
+
+	display: inline-block;
+}
+/*end of project cards */
 
 
 /* RESPONSIVE FOR PHONE */
 @media screen and (max-width: 900px) {
-
   main {
     margin: 1em;
   }
-
   h1 {
   	font-size: 3vh;
   }
-
   .title h1 {
 		line-height: 6vh;
 	}
@@ -240,16 +235,16 @@ footer {
 	h4 {
 		font-size: 1.5vh;
 	}
-
   .bio {
   	font-size: 3vh;
   }
-
   .grid-container {
   	grid-template-columns: 1fr;
   }
-
+  .project {
+  	border-radius: 10px;
+  }
+  .projecttext p {
+	font-size: 3vw;
+	}
 }
-
-
-
