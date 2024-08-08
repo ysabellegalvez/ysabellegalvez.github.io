@@ -3,14 +3,15 @@
 	margin: 0;
 	font-family: "Roboto Mono";
 	scroll-behavior: smooth;
+
 }
 :root {
-	--white: #f2f2f2;
-	--green: #A2C5AC;
-	--blue: #AEDFF2;
-	--pink: #D9A7CB;
-	--purple: #9F84BD;
-	--gray: #d1cfcb;
+	--white: #F0F2EF;
+	--green: #ACD8AA;
+	--blue: #BAD7F2;
+	--pink: #F2BAC9;
+	--purple: #BBA0CA;
+	--black: #272932;
 }
 main {
 	margin: 1em 5em;
@@ -30,9 +31,9 @@ h3 { /* subheadings for other pages */
 	text-align: center;
 	font-size: 3vh;
 	margin-top: 2em;
-	font-family: "ibm-plex-sans-condensed", sans-serif;
+	font-family: "roca", sans-serif;
 	font-weight: 700;
-	font-style: normal;
+	font-style: italic;
 }
 h4 { /*other page descriptions */
 	font-size: 2vh;
@@ -69,14 +70,14 @@ p {
 }
 a {
 	text-decoration: none;	
-	color: black; 
+	color: var(--black); 
 }
 a:hover {
-	opacity: .6;
 	color: white;
 	font-size: 2.5vh;
 	transition: all .2s ease-in-out;
 }
+
 .underline {
 	text-decoration: underline;
 }
@@ -87,21 +88,32 @@ button {
 	background-image: url(./colors/greenbackground.png);
 	padding: .3em 1em;
 	margin: 1em;
-	border: 3px solid var(--green);
+	border: 2px solid var(--black);
 	width: fit-content;
+	box-shadow: 5px 5px var(--black);
 	float: right;
 }
 
+.buttontitles {
+	float: none;
+	font-size: 2vh;
+	padding: .5em 3em;
+	margin-top: 1em;
+	margin-bottom: -1em;
+	font-family: "roca", sans-serif;
+	font-weight: 500;
+}
+
 .fa-linkedin {
-  color: black;
+  color: var(--black);
 }
 
 .fa-youtube {
-  color: black;
+  color: var(--black);
 }
 
 .fa-instagram {
-  color: black;
+  color: var(--black);
 }
 
 
@@ -112,8 +124,7 @@ button {
 }
 
 .skill {
-	font-family: "new-spirit", serif;
-	font-weight: 400;
+	font-family: "roca", sans-serif;
 	font-size: 3vh;
 }
 
@@ -124,16 +135,17 @@ button {
 }
 
 h1 { /* home page */
-	font-size: 7vh;
+	font-size: 4vh;
 	margin: 1em 0;
 }
+
 .bio {
-	font-size: 7vh;
+	font-size: 4vh;
 	text-decoration: none;
 }
 .bio:hover {
 	opacity: .7;
-	font-size: 7.5vh;
+	font-size: 4.5vh;
 	transform: scale(1.1);
 	transition: all .2s ease-in-out;
 }
@@ -141,7 +153,7 @@ h1 { /* home page */
 	border-radius: 20px;
 	background-image: url(./colors/greenbackground.png);
 	padding: .3em 1em;
-	border: 3px solid black;
+	border: 3px solid var(--black);
 	width: fit-content;
 	display: inline-block;
 	position: absolute;
@@ -165,7 +177,7 @@ h1 { /* home page */
 	margin: .5em 0;
 }
 hr {
-	border: 1px solid black;
+	border: 1px solid var(--black);
 }
 footer {
 	width: 100%;
@@ -173,8 +185,10 @@ footer {
 	text-align: center;	
 	left: 0;
 	bottom: 0;
-	padding: 2em 0;
+	padding: 5em 0;
 	position: relative;
+	border-radius: 25px;
+	border: 1px solid var(--black);
 }
 
 footer i {
