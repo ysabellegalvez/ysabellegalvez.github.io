@@ -89,9 +89,9 @@ button {
 	padding: .3em 1em;
 	margin: 1em;
 	border: 2px solid var(--black);
-	width: fit-content;
 	box-shadow: 5px 5px var(--black);
 	float: right;
+	width: fit-content;
 }
 
 .buttontitles {
@@ -197,10 +197,13 @@ footer i {
 
 /* Project Cards */
 .project {
-	padding: 1em;
+	padding: 1.5em;
+	margin: 1em;
 	align-items: center;
 	border-radius: 30px;
+	min-height: 400px;
 }
+
 .projectimage img {
 	width: 100%;
 }
@@ -217,18 +220,6 @@ footer i {
 	width: 100%;
 }
 
-.categories {
-	border-width: 1px;
-	border-radius: 6%;
-	font-size: 1.3vh;
-	border-style: solid;
-	text-align: center;
-	margin-top: 5px; 
-	margin-right: 15px;
-	padding: .5em;
-
-	display: inline-block;
-}
 /*end of project cards */
 
 
