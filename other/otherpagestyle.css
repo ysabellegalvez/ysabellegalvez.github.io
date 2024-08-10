@@ -6,21 +6,23 @@
 }
 
 :root {
-	--white: #f2f2f2;
-	--green: #A2C5AC;
-	--blue: #AEDFF2;
-	--pink: #D9A7CB;
-	--purple: #9F84BD;
-	--gray: #d1cfcb;
+	--white: #F0F2EF;
+	--green: #ACD8AA;
+	--blue: #BAD7F2;
+	--pink: #F2BAC9;
+	--purple: #BBA0CA;
+	--black: #272932;
 }
 
 button {
 	border-radius: 20px;
-	background-image: url(./colors/greenbackground.png);
+	background-image: url(../colors/greenbackground.png);
 	padding: .3em 1em;
-	border: 3px solid var(--green);
-	width: fit-content;
+	margin: 1em;
+	border: 2px solid var(--black);
+	box-shadow: 5px 5px var(--black);
 	float: right;
+	width: fit-content;
 }
 
 h1 { /* home page */
@@ -101,6 +103,13 @@ footer {
 	text-align: center;	
 	left: 0;
 	bottom: 0;
-	padding: .5em 0;
+	padding: 5em 0;
 	position: relative;
+	border-radius: 25px;
+	border: 1px solid var(--black);
 }
+
+footer i {
+	font-size: .8em;
+}
+
