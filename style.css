@@ -23,7 +23,7 @@ header {
 	margin: 2em;
 }
 
-main { /* body text */
+main { 
 	margin: 2em;
 }
 
@@ -84,12 +84,6 @@ a:hover {
 	cursor: pointer;
 }
 
-button:hover {
-	opacity: .8;
-	color: var(--lightgreen);
-	transition: 0.5s;
-	cursor: pointer;
-}
 
 img {
 	width: 100%;
@@ -115,6 +109,13 @@ button {
 	font-size: 1em;
 }
 
+button:hover {
+	opacity: .8;
+	color: var(--lightgreen);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
 a:hover {
 	opacity: .7;
 }
@@ -129,6 +130,10 @@ a:hover {
 
 .fa-instagram {
   color: var(--black);
+}
+
+.logo {
+	width: 8%;
 }
 
 
@@ -240,5 +245,16 @@ article > div img {
 	p {
 		font-size: 1em;
 	}
+
+	main { /* makes margins on phone smaller */
+	margin: .5em;
+	}
+
+	.logo {
+	width: 15%;
+	}
+
+	.button {
+	margin: 1em .5em 1em 1em; }
 
 }
