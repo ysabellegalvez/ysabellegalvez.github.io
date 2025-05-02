@@ -1,0 +1,244 @@
+* {
+	background-color: var(--white);
+	font-family: "Roboto Mono";
+	box-sizing: border-box; /* for two grid */
+}
+
+:root {
+	--black: #342E37;
+	--white: #F6F3F0;
+	--green: #5B7949;
+	--lightgreen: #86A96F;
+	--purple: #7F62A7;
+	--lightpurple: #B09FCA;
+}
+
+/* Changing the highlight colors */
+::selection {
+    background-color: var(--lightpurple);
+    color: var(--white);
+}
+
+header {
+	margin: 2em;
+}
+
+main { /* body text */
+	margin: 2em;
+}
+
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-top: 5px solid var(--lightgreen);
+	padding: .5em;
+	margin-top: 15em;
+}
+
+/* FONTS */
+h1 {
+	font-family: "roca", sans-serif;
+	display: inline-block;
+	font-size: 4vw;
+	margin-top: .5em;
+}
+
+h2 { /* project card sections title */
+	font-family: "roca", sans-serif;
+	font-style: italic;
+	color: var(--green);
+	margin: 2em 0 0 0;
+	font-size: 4vw;
+}
+
+h3 { ?/* project card titles */
+	font-family: "roca", sans-serif;
+	color: var(--black);
+	font-size: 2.5vw;
+	margin: .2em 0;
+}
+
+h4 { /* work page titles */
+	font-family: "roca", sans-serif;
+	color: var(--green);
+	font-size: 8vw;
+	margin: 1em 0 .5em 0;
+}
+
+p {
+	font-family: "Roboto Mono";
+	font-size: 1.2vw;
+	color: var(--black);
+}
+
+a {
+	color: var(--black);
+}
+
+a:hover {
+	opacity: .8;
+	color: var(--lightgreen);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: .8;
+	color: var(--lightgreen);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+hr {
+	color: var(--lightpurple);
+	border: 1px solid;
+	margin: 0;
+}
+
+button {
+	padding: .2em 0;
+	margin: 2em 1em 2em 2em;
+	float: right;
+	width: fit-content;
+	background: transparent;
+	border: none;
+	transition: 0.3s;
+	border-bottom: 5px solid var(--lightgreen);
+	font-family: "roca", sans-serif;
+	text-align: right;
+	font-size: 1em;
+}
+
+a:hover {
+	opacity: .7;
+}
+
+.fa-linkedin {
+  color: var(--black);
+}
+
+.fa-youtube {
+  color: var(--black);
+}
+
+.fa-instagram {
+  color: var(--black);
+}
+
+
+/* GRIDS */
+/* PROJECT CARDS */
+/* source: https://codepen.io/marklchaves/pen/xoNPEQ */
+section {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 7em 0 0;
+
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  flex: 1 200px; 
+  margin: 1em 0 1em 0;
+  border: 3px solid var(--lightpurple);
+}
+
+article > div p {
+	margin: 1em;
+}
+
+article > div img {
+	margin: .5em 0;
+	width: 100%;
+}
+
+.headlinecard {
+	margin: 1rem;
+}
+/* end of PROJECT CARD */
+/* end of GRIDS */
+
+.work {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: auto;
+	margin: 3em 1em;
+}
+
+.work > div {
+	font-size: 2vh;
+	margin: 1em;
+}
+.workleft {
+	font-size: 2vh;
+	text-align: right;
+	margin: 0;
+}
+
+.frame {
+	border: 5px solid var(--lightpurple);
+}
+/* end of work pages */
+
+/* 2 grid */
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 481px) {
+  article div:nth-child(2) {
+    /* Let the middle content
+       grow to naturally push
+       the button down. */
+    flex: 1;
+  }
+  }
+
+@media only screen and (max-width: 600px) {
+	.work {
+	grid-template-columns: 50% 50%;
+	}
+
+	.work div { /* makes work text small */
+		font-size: 1.25vh;
+	}
+
+	frame, img {
+		width: 100%;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1em;
+	}
+
+}
