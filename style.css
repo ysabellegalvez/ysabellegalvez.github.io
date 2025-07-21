@@ -45,6 +45,14 @@ h1 {
 	margin-top: .5em;
 }
 
+.titlename {
+	font-size: 8vw; 
+}
+
+.titlesubheading {
+	font-size: 1.5vw;
+}
+
 h2 { /* project card sections title */
 	font-family: "roca", sans-serif;
 	font-style: italic;
@@ -66,6 +74,14 @@ h4 { /* work page titles */
 	font-size: 8vw;
 	margin: 1em 0 .5em 0;
 }
+
+h5 { /* work page subheadings */
+	font-family: "roca", sans-serif;
+	color: var(--purple);
+	font-size: 4vw;
+	margin: 2em 0 .5em 0;
+}
+
 
 p {
 	font-family: "Roboto Mono";
@@ -256,5 +272,18 @@ article > div img {
 
 	.button {
 	margin: 1em .5em 1em 1em; }
+
+	/* title */
+	.titlename {
+		font-size: 15vw;
+	}
+
+	.titlesubheading {
+		font-size: 3vw;
+	}
+
+	.break {
+		width: 200%;
+	}
 
 }
